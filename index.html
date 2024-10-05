@@ -10,7 +10,7 @@
     <div class="container">
         <div class="sidebar">
             <div class="logo">
-                Dashboard
+                <h1>Dashboard</h1>
             </div>
             <div class="panel">
                 <ul>
@@ -29,25 +29,32 @@
         </div>
         <div class="header">
             <div class="search">
-                Search bar
+                <label for="project-search">Lupa</label>
+                <input type="text" name="project-search" id="project_search">
             </div>
             <div class="user-info">
-                Morgan Oakley
+                <div id="user-icon"></div>
+                <div class="greeting">
+                    <p>Hi there,</p>
+                    <h1>Morgan Oakley (@morgan)</h1>
+                </div>
             </div>
             <div class="notifications">
-                Notifications Morgan
+                <div>Bell</div>
+                <div id="user-icon"></div>
+                <h4>Morgan Oackley</h4>
             </div>
             <div class="functions">
-                <button>New</button>
-                <button>Upload</button>
-                <button>Share</button>
+                <button class="main-buttons">New</button>
+                <button class="main-buttons">Upload</button>
+                <button class="main-buttons">Share</button>
             </div>
         </div>
         <div class="projects">
-            Your Projects
+            <h3>Your Projects</h3>
             <div class="project-list">
                 <div class="card">
-                    <p>Super Cool Project</p>
+                    <p class="card-title">Super Cool Project</p>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Nihil placeat et officia voluptas amet. Ipsa facilis
@@ -60,7 +67,7 @@
 
                 </div>
                 <div class="card">
-                    <p>Super Cool Project</p>
+                    <p class="card-title">Super Cool Project</p>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Nihil placeat et officia voluptas amet. Ipsa facilis
@@ -73,7 +80,7 @@
 
                 </div>
                 <div class="card">
-                    <p>Super Cool Project</p>
+                    <p class="card-title">Super Cool Project</p>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Nihil placeat et officia voluptas amet. Ipsa facilis
@@ -86,7 +93,7 @@
 
                 </div>
                 <div class="card">
-                    <p>Super Cool Project</p>
+                    <p class="card-title">Super Cool Project</p>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Nihil placeat et officia voluptas amet. Ipsa facilis
@@ -99,7 +106,7 @@
 
                 </div>
                 <div class="card">
-                    <p>Super Cool Project</p>
+                    <p class="card-title">Super Cool Project</p>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Nihil placeat et officia voluptas amet. Ipsa facilis
@@ -112,10 +119,10 @@
 
                 </div>
                 <div class="card">
-                    <p>Super Cool Project</p>
+                    <p class="card-title">Super Cool Project</p>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Nihil placeat et officia voluptas amet. Ipsa facilis
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Nihil placeat et officia voluptas amet. Ipsa facilis
                     </p>
                     <div class="card-options">
                         <button>Star</button>
@@ -127,20 +134,60 @@
             </div>
         </div>
         <div class="announcements">
-            Announcements
+            <h3>Announcements</h3>
             <div class="announcements-list">
-                <div class="announce">Site Maintenance</div>
-                <div class="announce">Community Share Day</div>
-                <div class="announce">Updated Privacy Policy</div>
+                <div class="announce">
+                    <p class="card-title">Site Maintenance</p>
+                    <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    A dolore totam expedita commodi,
+                    </p>
+                </div>
+                <div class="announce">
+                    <p class="card-title">Community Share Day</p>
+                    <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    A dolore totam expedita commodi,
+                    </p>
+                </div>
+                <div class="announce">
+                    <p class="card-title">Updated Privacy Policy</p>
+                    <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    A dolore totam expedita commodi,
+                    </p>
+                </div>
             </div>
-        </div>
-        <div class="trending">
-            Trending
+            <h3>Trending</h3>
             <div class="trending-list">
-                <div class="trending-user">@tegan</div>
-                <div class="trending-user">@morgan</div>
-                <div class="trending-user">@kendall</div>
-                <div class="trending-user">@alex</div>
+                <div class="trending-user">
+                    <div id="tegan-icon"></div>
+                    <div class="user-short">
+                        <p class="card-title">@tegan</p>
+                        <p>World Peace Builder</p>
+                    </div>
+                </div>
+                <div class="trending-user">
+                    <div id="user-icon"></div>
+                    <div class="user-short">
+                        <p class="card-title">@morgan</p>
+                        <p>Super Cool Project</p>
+                    </div>
+                </div>
+                <div class="trending-user">
+                    <div id="kendall-icon"></div>
+                    <div class="user-short">
+                        <p class="card-title">@kendall</p>
+                        <p>Life Changing App</p>
+                    </div>
+                </div>
+                <div class="trending-user">
+                    <div id="alex-icon"></div>
+                    <div class="user-short">
+                        <p class="card-title">@alex</p>
+                        <p>No Traffic Maker</p>
+                    </div>
+                </div>
             </div>  
         </div>
     </div>
