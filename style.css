@@ -22,7 +22,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 1fr 2fr 2fr;
+    grid-template-rows: 1fr 3fr 3fr;
     grid-template-areas:
         'sidebar header header'
         'sidebar projects announcements'
@@ -32,7 +32,8 @@ body {
 
 .projects,
 .announcements,
-.trending {
+.trending,
+input {
     background-color: #e2e8f0;
 }
 
@@ -61,11 +62,44 @@ p {
     margin: 0.75ch;
 }
 
+h4 {
+    font-size: 20px;
+}
+
+input {
+    width: 80%;
+    height: 32px;
+    border-style: none;
+    border-radius: 6px;
+}
+
 .sidebar {
     grid-area: sidebar;
     display: grid;
     grid-template-rows: 1fr 9fr;
 }
+
+.logo img {
+    width: 75px;
+}
+
+.panel img {
+    width: 50px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: max(20px, 5%);
+    padding-left: 20px;
+}
+
+
+.filter-white {
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(80deg) brightness(108%) contrast(106%);
+}
+
 
 .panel ul {
     display: grid;
@@ -74,12 +108,20 @@ p {
     gap: 20px;
 }
 
+.panel li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: max(20px, 5%);
+    padding-left: 0px;
+}
+
 
 .header {
     grid-area: header;
     display: grid;
-    grid-template-columns: 70% 30%;
-    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 2fr 3fr;
     grid-template-areas:
         'search notifications'
         'user-info functions';
@@ -87,18 +129,38 @@ p {
 
 .search {
     grid-area: search;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: max(3%, 20px);
 }
 
 .notifications {
     grid-area: notifications;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    gap: max(5%, 30px);
+    padding-right: max(10%, 60px);
+}
+
+#bell, #lupa {
+    width: 40px;
 }
 
 .user-info {
     grid-area: user-info;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    padding-left: max(10%, 40px);
+    gap: max(5%, 30px);
+}
+
+.greeting p {
+    font-weight: bold;
 }
 
 #user-icon, #tegan-icon, #kendall-icon, #alex-icon {
@@ -127,8 +189,8 @@ p {
 }
 
 .user-info #user-icon {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
 }
 
 .greeting {
@@ -137,11 +199,16 @@ p {
 
 .functions {
     grid-area: functions;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding-right: max(30px, 5%);
 }
 
 .main-buttons {
     padding: 10px 20px;          /* Standard padding */
-    width: 120px;
+    width: 140px;
+    height: 60px;
     border: none;                /* No border */
     border-radius: 32px;          /* Rounded edges */
     font-size: 20px;             /* Standard font size */
@@ -190,6 +257,16 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: end;
+    padding-top: 30px;
+}
+
+.card-options button {
+    background-color: white;
+    border-style: none;
+}
+
+.card-options img {
+    width: 30px;
 }
 
 .announcements {
